@@ -5,7 +5,7 @@ import Login from "./containers/Login";
 import Signup from "./containers/Signup";
 import HomepageLayout from "./containers/Home";
 import Dashboard from "./containers/admin/Dashboard";
-import PrivateRoute from "./containers/PrivateRoute";
+// import PrivateRoute from "./containers/PrivateRoute";
 import ProductList from "./containers/ProductList";
 import OrderSummary from "./containers/OrderSummary";
 import Checkout from './containers/Checkout'
@@ -23,4 +23,5 @@ const BaseRouter = () => (
     </Switch>
   </Hoc>
 );
+
 export default BaseRouter;

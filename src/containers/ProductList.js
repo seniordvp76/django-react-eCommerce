@@ -1,17 +1,6 @@
 import React from 'react'
 import { connect } from 'react-redux'
-import {
-    Button,
-    Icon,
-    Image,
-    Item,
-    Label,
-    Container,
-    Segment,
-    Dimmer,
-    Loader,
-    Message
-} from 'semantic-ui-react'
+import { Button, Icon, Image, Item, Label, Container, Segment, Dimmer, Loader, Message } from 'semantic-ui-react'
 import axios from 'axios'
 import { productListURL, addToCartURL } from '../constants'
 import { authAxios } from '../utils'
@@ -92,9 +81,11 @@ class ProductList extends React.Component {
         )
     }
 }
+
 const mapDispatchTopProps = dispatch => {
     return {
         fetchCart: () => dispatch(fetchCart())
     }
 }
+
 export default connect(null, mapDispatchTopProps)(ProductList)

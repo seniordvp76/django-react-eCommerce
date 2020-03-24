@@ -57,4 +57,4 @@ class OrderDetailView(RetrieveAPIView):
             order = Order.objects.get(user=self.request.user, ordered=False)
             return order
         except ObjectDoesNotExist:
-            return Response({"message": "You do not have an active order"}, status=HTTP_400_BAD_REQUEST)
+            return Response({"message": "You don't have an active order"}, status=HTTP_400_BAD_REQUEST)
